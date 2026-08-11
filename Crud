@@ -1,1 +1,45 @@
+# Lista para guardar todos os ingressos criados
+ingressos = []
 
+while True:
+    print("\n---  INGRESSOS DISNEY ---")
+    print("1. Criar Ingresso (Create)")
+    print("2. Ver Ingressos (Read)")
+    print("3. Mudar Parque (Update)")
+    print("4. Cancelar Ingresso (Delete)")
+    print("5. Sair")
+    
+    opcao = input("Escolha (1-5): ")
+
+    if opcao == "1":
+        nome = input("Seu nome: ")
+        parque = input("Parque (ex: Magic Kingdom): ")
+        # Adiciona uma nova 'pasta' com os dados na lista
+        ingressos.append({"nome": nome, "parque": parque})
+        print(f" Ingresso de {nome} criado para o {parque}!")
+
+    elif opcao == "2":
+        print("\n--- LISTA DE INGRESSOS ---")
+        if len(ingressos) == 0:
+            print("Nenhum ingresso cadastrado.")
+        else:
+            # Mostra cada ingresso com a sua posição (0, 1, 2...)
+            for posicao, item in enumerate(ingressos):
+                print(f"Número [{posicao}]: {item['nome']} - Parque: {item['parque']}")
+
+    elif opcao == "3":
+        num = int(input("Digite o número do ingresso que quer mudar: "))
+        novo_parque = input("Digite o novo parque: ")
+        # Atualiza o valor dentro da lista
+        ingressos[num]["parque"] = novo_parque
+        print(" Parque alterado com sucesso!")
+
+    elif opcao == "4":
+        num = int(input("Digite o número do ingresso que quer apagar: "))
+        # Apaga o ingresso selecionado
+        removido = ingressos.pop(num)
+        print(f" Ingresso de {removido['nome']} foi deletado!")
+
+    elif opcao == "5":
+        print("Até logo!")
+        break
