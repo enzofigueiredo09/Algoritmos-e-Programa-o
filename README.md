@@ -16,12 +16,15 @@ Construir um sistema simples de terminal para gerenciar o ciclo de vida de um in
 
 ### 2.  Mapeamento do CRUD (Regras de Negócio)
 
-| Operação CRUD | Ação do Usuário | Regra do Sistema |
-| :--- | :--- | :--- |
-| **C - Create** | Emitir Ingresso | Solicita nome e parque, cria a reserva com status inicial "Ativo". |
-| **R - Read** | Ver Ingressos | Exibe a lista completa de ingressos com seus respectivos números identificadores. |
-| **U - Update** | Mudar Parque | Permite escolher um ingresso existente e alterar o parque selecionado. |
-| **D - Delete** | Cancelar Ingresso | Remove a reserva do sistema e libera a vaga do parque. |
+ Operação CRUD | Ação do Usuário | Regra do Sistema.
+
+ **C - Create** | Emitir Ingresso | Solicita nome e parque, cria a reserva com status inicial "Ativo". 
+
+ **R - Read** | Ver Ingressos | Exibe a lista completa de ingressos com seus respectivos números identificadores. 
+
+ **U - Update** | Mudar Parque | Permite escolher um ingresso existente e alterar o parque selecionado. 
+ 
+ **D - Delete** | Cancelar Ingresso | Remove a reserva do sistema e libera a vaga do parque. 
 
 ---
 
