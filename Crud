@@ -1,10 +1,10 @@
-Variáveis para guardar os dados de um único ingresso
+Variaveis para guardar os dados de um unico ingresso
 nome = ""
 parque = ""
 tem_ingresso = False
 
 while True:
-    print("\n--- INGRESSOS DISNEY ---")
+    print("INGRESSOS DISNEY")
     print("1. Criar Ingresso (Create)")
     print("2. Ver Ingresso (Read)")
     print("3. Mudar Parque (Update)")
@@ -17,13 +17,13 @@ while True:
         if tem_ingresso == True:
             print(" Já existe um ingresso cadastrado! Cancele o atual para criar outro.")
         else:
-            nome = input("Seu nome: ")
+            nome = input("Seu nome:")
             parque = input("Parque (ex: Magic Kingdom): ")
             tem_ingresso = True
             print(f" Ingresso de {nome} criado para o {parque}!")
 
     elif opcao == "2":
-        print("\n--- SEU INGRESSO ---")
+        print("SEU INGRESSO")
         if tem_ingresso == False:
             print("Nenhum ingresso cadastrado.")
         else:
@@ -47,8 +47,8 @@ while True:
             print(" Ingresso deletado com sucesso!")
 
     elif opcao == "5":
-        print("Até logo!")
+        print("Ate logo!")
         break
 
     else:
-        print("Opção inválida! Escolha um número de 1 a 5.")
+        print("Opcao invalida! Escolha um número de 1 a 5.")
