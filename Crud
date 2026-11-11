@@ -1,7 +1,6 @@
-Variaveis para guardar os dados de um unico ingresso
-nome = ""
-parque = ""
-tem_ingresso = False
+Nome = ""
+Parque = ""
+Tem_ingresso = False
 
 while True:
     print("INGRESSOS DISNEY")
