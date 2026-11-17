@@ -250,6 +250,7 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 - [✅] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
 - [✅] Commits no GitHub e painel atualizado
 
+
 ## 🟢 CICLO 01 — 12/08 — Preparação do laboratório e escolha do projeto
 
 <details>
@@ -267,7 +268,7 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 2. **O que implementei (commits / arquivos / links):** Foi realizado a definição do projeto de um CRUD em Python inspirado em uma plataforma de classificados, utilizando o App da Disney como referência. Também foi planejada a estrutura inicial do repositório e a configuração do ambiente de desenvolvimento no VS Code
 3. **Objeto(s) de conhecimento mobilizado(s):** Possuía conhecimentos bem básicos de Python, com pouca familiaridade com lógica de programação e suas estruturas. Em relação ao Git e GitHub, sabia apenas criar repositórios, mas ainda não dominava outras funcionalidades de controle de versão, como commits e gerenciamento do histórico de alterações.
 4. **Desvio ou erro encontrado + causa técnica:** Não foram encontradas dificuldades durante a configuração do ambiente de desenvolvimento. A instalação e a preparação das ferramentas ocorreram normalmente, sem apresentar problemas técnicos.
-5. **Decisão de ajuste + fonte:** Decidi organizar o Anuncify em uma pasta específica dentro do repositório Algoritmos-e-programacao, separando os arquivos do projeto das demais atividades. O CRUD será desenvolvido em Python, inspirado no App da Disney, utilizando Git e GitHub para controlar versões e acompanhar as alterações do código.
+5. **Decisão de ajuste + fonte:** Decidi organizar o CRUD da Disney em uma pasta específica dentro do repositório Algoritmos-e-programacao, separando os arquivos do projeto das demais atividades. O CRUD será desenvolvido em Python, inspirado no App da Disney, utilizando Git e GitHub para controlar versões e acompanhar as alterações do código.
 6. **Feedback recebido e o que mudei:** Até o momento, não foram recebidos feedbacks externos sobre o projeto. A proposta inicial foi mantida, considerando os requisitos definidos para o sistema de classificados.
 7. **Próximo passo:** Começar a aplicar os conhecimentos adquiridos em Python, aprofundando a lógica de programação e desenvolvendo gradualmente as funcionalidades do CRUD inspirado na Disney e todo o processo que ocorre no App.
 
@@ -280,10 +281,19 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **Campo 01 — Instrumento de entrada** · *sem consulta · faça primeiro*
 - Preencha **antes de tudo**, em um bloco contínuo de cerca de 15 minutos, sem internet, sem material, sem IA e sem colegas, depois de conhecer a questão-problema e a primeira amostra de dados do seu app. Depois do Campo 01 você pode consultar o que quiser.
-- **1a.** Liste pelo menos **3 objetos de conhecimento** que você acha que precisa dominar para resolver o problema. Use o vocabulário técnico da área. *Não precisa acertar tudo — o Campo 07 vai mostrar o quanto você evoluiu.*
-- **1b.** Liste pelo menos **3 lacunas**: o que você **não sabe** e precisa descobrir, com precisão (ruim: "não sei programar"; bom: "não sei como validar a entrada para impedir que o usuário digite texto onde espero número").
-- **1c.** Escreva sua **hipótese inicial** em até 5 linhas: o que você acha que está causando as falhas do CRUD e por quê.
-- Faça o commit **logo ao terminar**. Depois, **não edite** o Campo 01.
+
+**1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
+1. Declaração e atribuição de variáveis em memória para armazenar os dados do ingresso durante a execução do programa.
+2. Uso de tipos primitivos em Python (`int`, `float`, `str` e `bool`) de acordo com cada dado do sistema.
+3. Comandos de entrada e saída padrão no console (`input()` e `print()`) para capturar as escolhas do usuário e exibir os resultados.
+
+**1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
+1. Não sei como controlar se já existe um ingresso cadastrado ou não usando apenas variáveis simples, sem usar listas ou dicionários.
+2. Preciso entender melhor como funciona o tipo de dado retornado pelo `input()` e a conversão de tipos (*type casting*) para evitar erros na comparação das opções do menu.
+3. Não sei como limpar os dados das variáveis (`nome` e `parque`) quando o usuário cancelar o ingresso, para não ficar dado antigo na memória.
+
+**1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
+> Acredito que consigo montar a base do CRUD da Disney usando apenas variáveis primitivas e entrada/saída de dados, mas os problemas iniciais acontecem por falta de controle de estado na memória. Sem uma variável que indique se já existe um ingresso ativo ou não, o programa acaba exibindo campos vazios na leitura ou permitindo alterar um ingresso que nem foi criado, além de possíveis erros de tipagem na leitura do `input()`.
 
 **Campo 02 — Aprofundamento** · *AV Qualis · segunda 16/11, 23h59*
 - Preencha **depois do Campo 01, com pesquisa real**, e seja coerente com ele.
@@ -292,24 +302,7 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 - **2c.** **Dimensionamento inicial de recursos** (mínimo 3 itens), com quantidade estimada e justificativa técnica. Exemplos de recursos no seu contexto: horas de estudo, número de casos de teste, módulos/arquivos do projeto, dados de teste, bibliotecas.
 </details>
 
-### 🧩 CAMPO 01 — Instrumento de entrada
-*Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
-
-**1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. Declaração e atribuição de variáveis em memória para guardar os dados do ingresso durante a execução.
-2. Uso de tipos primitivos em Python (`int`, `float`, `str` e `bool`) de acordo com cada informação do sistema.
-3. Comandos de entrada e saída no console (`input()` e `print()`) para receber as escolhas do usuário e mostrar os resultados.
-
-**1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. Não sei como controlar se já existe um ingresso cadastrado ou não usando apenas variáveis simples, sem recorrer a listas.
-2. Preciso entender melhor como funciona o tipo do dado retornado pelo `input()` e a conversão de tipos (*type casting*) para não dar erro na hora de comparar a opção do menu.
-3. Não sei como limpar os dados das variáveis (`nome` e `parque`) quando o usuário cancelar o ingresso, para não ficar lixo na memória.
-
-**1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
-
-> Acredito que consigo montar a base do CRUD da Disney usando apenas variáveis primitivas e entrada/saída de dados, mas os problemas iniciais vão acontecer por falta de controle de estado na memória. Sem algo que indique se já tem um ingresso ativo ou não, o programa acaba mostrando campos vazios na leitura ou deixando alterar um ingresso que nem foi criado ainda, além de possíveis erros de tipo no `input()`.
-
-### 🧩 CAMPO 02 — Aprofundamento pós-aula
+## CAMPO 02 — Aprofundamento pós-aula
 *AV Qualis — Grupo 1 | Segunda 16/11, 23h59*
 
 > **Preenchido depois do Campo 01, com pesquisa real. Deve ser coerente com o Campo 01. Incoerência = evidência de autoria externa.**
@@ -319,7 +312,7 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 - **Referência 1:** Curso Python #06 – Tipos Primitivos e Saída de Dados, de Gustavo Guanabara (Curso em Vídeo). — **Contribuição:** Essa aula me ajudou a entender melhor o tipo `bool` e o fato de que o `input()` sempre guarda o que o usuário digita como texto (`str`). Isso resolveu minha dúvida sobre comparar as opções do menu como strings (`"1"`, `"2"`, etc.) e me deu a ideia de usar uma variável booleana (`tem_ingresso = False`) para controlar se há ingresso ativo.
 - **Referência 2:** Exercício Python #004 – Dissecando uma Variável, de Gustavo Guanabara (Curso em Vídeo). — **Contribuição:** Com esse exercício prático, vi como inspecionar o tipo e o estado de uma variável depois que o usuário digita algo, o que me ajudou a pensar em como validar as variáveis `nome` e `parque` antes de permitir a leitura, alteração ou exclusão no meu CRUD.
 
-  Durante os estudos, também usei o ChatGPT para tirar dúvidas rápidas sobre tipagem dinâmica e como controlar o estado do programa usando só variáveis simples.
+Durante os estudos, também usei o Gemini (IA de uso cotidiano) para tirar dúvidas rápidas sobre tipagem dinâmica e como controlar o estado do programa usando só variáveis simples.
 
 **2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:** 
 
@@ -330,8 +323,8 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
 | Aulas de Python | 2 aulas | Revisar tipos primitivos (`str`, `bool`), atribuição de variáveis e entrada/saída (`input()`, `print()`). |
-| Estudos e exercícios práticos | 3 dias | Praticar a manipulação das variáveis e formatação com *f-strings* antes de juntar tudo no menu. |
-| Casos de teste manuais | 8 testes | Testar as 4 operações do CRUD tanto com ingresso vazio quanto com ingresso já cadastrado, além de opções erradas. |
+| Estudos e exercícios práticos - LeetCode | 30 exercícios | Praticar a manipulação das variáveis e formatação com *f-strings* antes de juntar tudo no menu. |
+| Casos de teste manuais - No site "MyCompiler" - Utilizado pelo professor em sala | 14 testes | Testar as 4 operações do CRUD tanto com ingresso vazio quanto com ingresso já cadastrado, além de opções erradas. |
 | Arquivo do projeto | 1 arquivo Python | Concentrar o código inicial do CRUD da Disney (`main.py`) usando apenas estruturas básicas. |
 | Repositório GitHub | 1 repositório | Salvar o código (`Algoritmos-e-Programa-o`) e registrar
 
