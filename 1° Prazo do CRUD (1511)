@@ -36,23 +36,75 @@
 
 ---
 
+
 ## 🛠️ Diário de Construção do Código (Grupo 1 - 1611)
 
-> **Escopo:** Anotações sobre a lógica, tentativas e ajustes feitos na primeira versão do meu CRUD (referentes aos **Ciclos 01 a 04** e **Campos 01 e 02**).
+> **Escopo:** Anotações sobre a primeira versão do meu CRUD **My Disney Experience** (Ciclos 01 a 04 e Campos 01 e 02).
 
 ### 1. Visão Geral da Implementação
-* **O que funciona nesta versão:** _escreva aqui_
-* **Estruturas utilizadas:** _escreva aqui_
-* **Arquivo no repositório:** _cole o link ou caminho do arquivo `.py` aqui_
+- **O que funciona nesta versão:** Cadastro, leitura, alteração de parque e cancelamento de um ingresso por vez no terminal.
+- **Estruturas utilizadas:** Variáveis (`str`, `bool`), `input()`, `print()`, operadores (`=`, `==`), condicionais (`if`, `elif`, `else`) e laço `while True` com `break`.
 
-### 2. Registro de Tentativas e Ajustes (O que tentei → O que falhou → Como resolvi)
-* **Tentativa 1:** _escreva aqui o que tentou fazer, por que não deu certo e o que mudou_
-* **Tentativa 2:** _escreva aqui o que tentou fazer, por que não deu certo e o que mudou_
-* **Tentativa 3:** _escreva aqui o que tentou fazer, por que não deu certo e o que mudou_
+### 2. Registro de Tentativas e Ajustes
+- **Tentativa 1 (Leitura vazia):** Usei só `nome` e `parque`. Falhou porque exibia campos em branco antes de cadastrar. Resolvi criando a flag booleana `tem_ingresso = False`.
+- **Tentativa 2 (Erro no menu):** Comparei `opcao == 1` (inteiro) e usei `=` no `if`. Falhou porque `input()` retorna `str` e `=` dá erro de sintaxe. Resolvi usando `==` e strings (`"1"` a `"5"`).
+- **Tentativa 3 (Exclusão incompleta):** No cancelamento (`"4"`), mudei só `tem_ingresso = False`, mas `nome` e `parque` ficavam na memória. Resolvi zerando ambos (`""`) e criando um `else` para opções inválidas.
 
 ### 3. Notas de Estudo (Apoio aos Campos 01 e 02)
-* **Principais dúvidas resolvidas:** _escreva aqui_
-* **Fontes consultadas na prática:** _escreva aqui_
+- **Principais dúvidas resolvidas:** Como controlar o estado sem usar listas (via `bool`) e tratar o retorno `str` do `input()`.
+- **Fontes consultadas:** Curso em Vídeo — *Python #06* e *Exercício #004* (Gustavo Guanabara); Documentação Oficial do Python 3.
+
+---
+
+### 🧩 Campo 01 — Entrada (O que acho que sei e o que não sei?)
+- **O que já domino:** Variáveis (`str`, `bool`), `input()`, `print()`, operadores (`==`) e condicionais básicas (`if`, `elif`, `else`).
+- **O que ainda não sei:** Controlar a existência de um registro usando só variáveis simples; evitar erros de tipo no `input()`; e limpar os dados da memória ao excluir.
+- **Hipótese inicial:** As falhas iniciais acontecem pela falta de uma variável de estado que indique se há ingresso ativo e pela falta de validação das entradas do usuário.
+
+### 🧩 Campo 02 — Aprofundamento (O que pesquisei e como minha hipótese mudou?)
+- **O que pesquisei:** Aulas de tipos primitivos do Curso em Vídeo (#06 e #004) e a documentação do Python sobre controle de fluxo (`if/elif/else` e retorno `str` do `input()`).
+- **Como minha hipótese mudou:** Confirmei que, sem usar listas, o controle do CRUD depende da flag `tem_ingresso` combinada com `if/else` aninhados, além de zerar `nome` e `parque` na exclusão.
+- **Dimensionamento inicial:** 5 variáveis (`nome`, `parque`, `tem_ingresso`, `opcao`, `novo_parque`), 8 cenários de teste, 4 horas de prática e 1 arquivo Python no GitHub.
+
+---
+
+### 🔁 Registros dos Ciclos (01 a 04)
+
+#### Registro do Ciclo 01 — 12/08
+1. **Desafio do ciclo (em 1 frase):** Configurar o VS Code, Git e GitHub e definir o escopo do CRUD "My Disney Experience".
+2. **O que implementei:** Criei o repositório no GitHub, configurei o Python no VS Code e defini os atributos `nome` e `parque`.
+3. **Objeto(s) de conhecimento mobilizado(s):** Git/GitHub, VS Code e modelagem básica de dados.
+4. **Desvio ou erro encontrado + causa técnica:** Apenas a necessidade inicial de vincular o repositório local ao remoto (`origin`).
+5. **Decisão de ajuste + fonte:** Mantive o escopo simples (um ingresso por vez) seguindo o *Git Guides* do GitHub.
+6. **Feedback recebido e o que mudei:** Orientação para focar no controle de estado antes de avançar para listas.
+7. **Próximo passo:** Implementar variáveis e entrada/saída de dados no Ciclo 02.
+
+#### Registro do Ciclo 02 — 19/08
+1. **Desafio do ciclo (em 1 frase):** Capturar e exibir os dados do ingresso usando variáveis primitivas, `input()` e `print()`.
+2. **O que implementei:** Criei `nome = ""`, `parque = ""` e `tem_ingresso = False`, usando `input()` e *f-strings*.
+3. **Objeto(s) de conhecimento mobilizado(s):** Variáveis, tipos primitivos (`str`, `bool`), `input()` e `print()`.
+4. **Desvio ou erro encontrado + causa técnica:** O programa imprimia campos vazios antes do cadastro por falta de uma flag booleana de controle.
+5. **Decisão de ajuste + fonte:** Criei `tem_ingresso = False` (mudando para `True` ao cadastrar), baseado no Curso em Vídeo (Aula #06).
+6. **Feedback recebido e o que mudei:** Inicializei todas as variáveis antes do laço principal para evitar erros de execução.
+7. **Próximo passo:** Estruturar os operadores de comparação do menu no Ciclo 03.
+
+#### Registro do Ciclo 03 — 26/08
+1. **Desafio do ciclo (em 1 frase):** Aplicar operadores relacionais e lógica booleana nas opções do menu.
+2. **O que implementei:** Implementei as comparações de `opcao` (`"1"` a `"5"`) e a verificação de `tem_ingresso`.
+3. **Objeto(s) de conhecimento mobilizado(s):** Paradigma procedural, operadores (`=`, `==`) e tipagem (`str`, `bool`).
+4. **Desvio ou erro encontrado + causa técnica:** Erro de sintaxe ao usar `=` no `if` e falha ao comparar `opcao == 1` (inteiro) em vez de `"1"` (string).
+5. **Decisão de ajuste + fonte:** Padronizei o uso de `==` e strings (`"1"` a `"5"`), conforme a documentação do Python.
+6. **Feedback recebido e o que mudei:** Deixei explícita a verificação de `True` e `False` em cada ramo do menu.
+7. **Próximo passo:** Proteger todas as operações com estruturas condicionais no Ciclo 04.
+
+#### Registro do Ciclo 04 — 02/09
+1. **Desafio do ciclo (em 1 frase):** Vincular cada operação do CRUD a regras de negócio usando `if`, `elif` e `else`.
+2. **O que implementei:** Estruturei o menu em `main.py` dentro de `while True`, usando `if/else` aninhados para validar `tem_ingresso`.
+3. **Objeto(s) de conhecimento mobilizado(s):** Condicionais encadeadas e aninhadas (`if`, `elif`, `else`) e laço `while True` com `break`.
+4. **Desvio ou erro encontrado + causa técnica:** No cancelamento (`"4"`), mudar só `tem_ingresso = False` deixava `nome` e `parque` salvos na memória.
+5. **Decisão de ajuste + fonte:** Zerei `nome = ""` e `parque = ""` na exclusão e criei um `else` para opções inválidas (Documentação Python), validando os 8 testes do Campo 02.
+6. **Feedback recebido e o que mudei:** A mensagem de opção inválida no `else` evitou falhas quando o usuário digita fora de `1` a `5`.
+7. **Próximo passo:** Revisar os commits do Grupo 1 para a Defesa Técnica (18/11) e preparar o Grupo 2.
 
 Campo 01 - Entrada (O que acho que sei e o que não sei?)
 Campo 02 - Aprofundamento (O que pesquisei e como minha hipótese mudou?)
