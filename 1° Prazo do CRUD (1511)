@@ -245,10 +245,10 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **Checklist do Grupo 1**
 - [✅] Identificação preenchida (app-base, link do repositório, dupla de revisão)
-- [ ] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
-- [ ] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
-- [ ] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
-- [ ] Commits no GitHub e painel atualizado
+- [✅ ] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
+- [✅ ] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
+- [✅] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
+- [✅] Commits no GitHub e painel atualizado
 
 ## 🟢 CICLO 01 — 12/08 — Preparação do laboratório e escolha do projeto
 
@@ -263,13 +263,15 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 01 — 12/08
-1. **Desafio do ciclo (em 1 frase):** Configuração do ambiente de desenvolvimento utilizando VS Code, Git e GitHub para a construção de um CRUD inspirado na plataforma OLX
-2. **O que implementei (commits / arquivos / links):** Foi realizado a definição do projeto de um CRUD em Python inspirado em uma plataforma de classificados, utilizando a OLX como referência. Também foi planejada a estrutura inicial do repositório e a configuração do ambiente de desenvolvimento no VS Code
-3. **Objeto(s) de conhecimento mobilizado(s):** Possuía conhecimentos básicos de Python, com pouca familiaridade com lógica de programação e suas estruturas. Em relação ao Git e GitHub, sabia apenas criar repositórios, mas ainda não dominava outras funcionalidades de controle de versão, como commits e gerenciamento do histórico de alterações.
+1. **Desafio do ciclo (em 1 frase):** Configuração do ambiente de desenvolvimento utilizando VS Code, Git e GitHub para a construção de um CRUD inspirado no App da Disney
+2. **O que implementei (commits / arquivos / links):** Foi realizado a definição do projeto de um CRUD em Python inspirado em uma plataforma de classificados, utilizando o App da Disney como referência. Também foi planejada a estrutura inicial do repositório e a configuração do ambiente de desenvolvimento no VS Code
+3. **Objeto(s) de conhecimento mobilizado(s):** Possuía conhecimentos bem básicos de Python, com pouca familiaridade com lógica de programação e suas estruturas. Em relação ao Git e GitHub, sabia apenas criar repositórios, mas ainda não dominava outras funcionalidades de controle de versão, como commits e gerenciamento do histórico de alterações.
 4. **Desvio ou erro encontrado + causa técnica:** Não foram encontradas dificuldades durante a configuração do ambiente de desenvolvimento. A instalação e a preparação das ferramentas ocorreram normalmente, sem apresentar problemas técnicos.
-5. **Decisão de ajuste + fonte:** Decidi organizar o Anuncify em uma pasta específica dentro do repositório Algoritmos-e-programacao, separando os arquivos do projeto das demais atividades. O CRUD será desenvolvido em Python, inspirado na OLX, utilizando Git e GitHub para controlar versões e acompanhar as alterações do código.
+5. **Decisão de ajuste + fonte:** Decidi organizar o Anuncify em uma pasta específica dentro do repositório Algoritmos-e-programacao, separando os arquivos do projeto das demais atividades. O CRUD será desenvolvido em Python, inspirado no App da Disney, utilizando Git e GitHub para controlar versões e acompanhar as alterações do código.
 6. **Feedback recebido e o que mudei:** Até o momento, não foram recebidos feedbacks externos sobre o projeto. A proposta inicial foi mantida, considerando os requisitos definidos para o sistema de classificados.
-7. **Próximo passo:** Começar a aplicar os conhecimentos adquiridos em Python, aprofundando a lógica de programação e desenvolvendo gradualmente as funcionalidades do CRUD inspirado na OLX.
+7. **Próximo passo:** Começar a aplicar os conhecimentos adquiridos em Python, aprofundando a lógica de programação e desenvolvendo gradualmente as funcionalidades do CRUD inspirado na Disney e todo o processo que ocorre no App.
+
+## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
 ## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
@@ -294,19 +296,18 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 *Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
 
 **1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. Conhecimento prévio sobre variáveis e sua utilização para armazenar informações durante a execução de um programa.
-2. Conhecimento básico sobre tipos de dados, compreendendo a utilização de números inteiros, números decimais e textos.
-3. Conhecimento sobre comandos de entrada e saída, como input() e print(), para receber informações do usuário e exibir resultados.
-
+1. Declaração e atribuição de variáveis em memória para guardar os dados do ingresso durante a execução.
+2. Uso de tipos primitivos em Python (`int`, `float`, `str` e `bool`) de acordo com cada informação do sistema.
+3. Comandos de entrada e saída no console (`input()` e `print()`) para receber as escolhas do usuário e mostrar os resultados.
 
 **1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. Aprofundar o conhecimento sobre o tipo de dado char e compreender sua utilização em variáveis.
-2. Compreender melhor a conversão de tipos de dados (type casting) e sua importância ao receber informações do usuário.
-3. Aprender a utilizar e manipular corretamente os dados recebidos por meio de comandos de entrada, evitando incompatibilidades entre os tipos de dados.
+1. Não sei como controlar se já existe um ingresso cadastrado ou não usando apenas variáveis simples, sem recorrer a listas.
+2. Preciso entender melhor como funciona o tipo do dado retornado pelo `input()` e a conversão de tipos (*type casting*) para não dar erro na hora de comparar a opção do menu.
+3. Não sei como limpar os dados das variáveis (`nome` e `parque`) quando o usuário cancelar o ingresso, para não ficar lixo na memória.
 
 **1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
 
-> Minha hipótese inicial era que conseguiria utilizar os conhecimentos básicos sobre variáveis, tipos de dados e entrada/saída para desenvolver as primeiras funcionalidades do meu CRUD em Python. Esperava encontrar dificuldades na utilização de diferentes tipos de dados e na conversão das informações recebidas pelo usuário, principalmente durante o cadastro e armazenamento dos anúncios.
+> Acredito que consigo montar a base do CRUD da Disney usando apenas variáveis primitivas e entrada/saída de dados, mas os problemas iniciais vão acontecer por falta de controle de estado na memória. Sem algo que indique se já tem um ingresso ativo ou não, o programa acaba mostrando campos vazios na leitura ou deixando alterar um ingresso que nem foi criado ainda, além de possíveis erros de tipo no `input()`.
 
 ### 🧩 CAMPO 02 — Aprofundamento pós-aula
 *AV Qualis — Grupo 1 | Segunda 16/11, 23h59*
@@ -315,33 +316,28 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **2a. Aprofundamento dos objetos de conhecimento (mínimo 2 referências com síntese da contribuição para a solução):**
 
-- **Referência 1:** Curso Python #06 – Tipos Primitivos e Saída de Dados, de Gustavo Guanabara (Curso em Vídeo). — **Contribuição:** A aula aprofundou o conhecimento sobre os tipos primitivos do Python, apresentando o tipo bool e explicando melhor a utilização de int(), float() e str(). Também demonstrou como utilizar input() para receber informações do usuário e print() para exibir dados na tela, além da importância da conversão de tipos para trabalhar corretamente com os valores recebidos.
-- **Referência 2:**Exercício Python #004 – Dissecando uma Variável, de Gustavo Guanabara (Curso em Vídeo). — **Contribuição:** O exercício demonstrou como analisar uma variável a partir de uma informação digitada pelo usuário, identificando seu tipo primitivo e verificando características do valor recebido. Isso contribuiu para compreender melhor como os dados são armazenados e como suas propriedades podem ser identificadas utilizando recursos do Python.
+- **Referência 1:** Curso Python #06 – Tipos Primitivos e Saída de Dados, de Gustavo Guanabara (Curso em Vídeo). — **Contribuição:** Essa aula me ajudou a entender melhor o tipo `bool` e o fato de que o `input()` sempre guarda o que o usuário digita como texto (`str`). Isso resolveu minha dúvida sobre comparar as opções do menu como strings (`"1"`, `"2"`, etc.) e me deu a ideia de usar uma variável booleana (`tem_ingresso = False`) para controlar se há ingresso ativo.
+- **Referência 2:** Exercício Python #004 – Dissecando uma Variável, de Gustavo Guanabara (Curso em Vídeo). — **Contribuição:** Com esse exercício prático, vi como inspecionar o tipo e o estado de uma variável depois que o usuário digita algo, o que me ajudou a pensar em como validar as variáveis `nome` e `parque` antes de permitir a leitura, alteração ou exclusão no meu CRUD.
 
-  Durante o processo de aprendizagem, utilizei o ChatGPT como assistente de aprendizagem para esclarecer dúvidas, reforçar os conteúdos estudados e compreender melhor os conceitos de variáveis, tipos de dados e comandos de entrada e saída em Python.
+  Durante os estudos, também usei o ChatGPT para tirar dúvidas rápidas sobre tipagem dinâmica e como controlar o estado do programa usando só variáveis simples.
 
 **2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:** 
 
-> Após o aprofundamento, compreendi melhor a utilização dos tipos primitivos e a importância da conversão de dados em Python. Também percebi que o comando input() recebe informações inicialmente como texto, sendo necessário converter os valores quando se deseja trabalhar com números. Com isso, passei a entender melhor como esses conceitos podem ser aplicados futuramente no cadastro de anúncios do meu CRUD.
+> Minha hipótese inicial se confirmou, mas agora sei exatamente como resolver o problema na prática. Com a pesquisa, vi que não preciso converter a opção do menu para `int` se eu comparar direto com strings (`"1"` a `"5"`), e que criar uma variável booleana (`tem_ingresso`) resolve o controle de estado, bloqueando a leitura ou alteração quando ainda não existe ingresso cadastrado no "My Disney Experience".
 
 **2c. Dimensionamento inicial de recursos (recurso, quantidade estimada, justificativa técnica — mínimo 3 itens):**
 
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
-|Aulas de Python | 2 aulas | Revisar os conteúdos de variáveis, tipos de dados e entrada e saída de informações. |
-| Estudos e exercícios práticos | 3 dias | Reforçar os conhecimentos adquiridos e praticar os conceitos apresentados nas aulas. |
-| Testes de funcionalidades | 2 operações CRUD | Verificar o funcionamento de cadastro, consulta, atualização e exclusão de anúncios. |
-| Arquivos do projeto | 1 arquivo Python inicial | Organizar o código e concentrar as primeiras funcionalidades do Anuncify. |
-| Repositório GitHub | 1 repositório | Armazenar o projeto e acompanhar sua evolução por meio do histórico de commits. |
+| Aulas de Python | 2 aulas | Revisar tipos primitivos (`str`, `bool`), atribuição de variáveis e entrada/saída (`input()`, `print()`). |
+| Estudos e exercícios práticos | 3 dias | Praticar a manipulação das variáveis e formatação com *f-strings* antes de juntar tudo no menu. |
+| Casos de teste manuais | 8 testes | Testar as 4 operações do CRUD tanto com ingresso vazio quanto com ingresso já cadastrado, além de opções erradas. |
+| Arquivo do projeto | 1 arquivo Python | Concentrar o código inicial do CRUD da Disney (`main.py`) usando apenas estruturas básicas. |
+| Repositório GitHub | 1 repositório | Salvar o código (`Algoritmos-e-Programa-o`) e registrar
 
-#### Registro do Ciclo 02 — 19/08
-1. **Desafio do ciclo (em 1 frase):** Aprofundar os conhecimentos sobre variáveis, tipos de dados e comandos de entrada e saída em Python.
-2. **O que implementei (commits / arquivos / links):** Realizei estudos e exercícios práticos utilizando o arquivo aula1908PA.py, no qual pratiquei a declaração, inicialização e atribuição de valores a variáveis, além da identificação e utilização de diferentes tipos de dados em Python, como int, float e str.
-3. **Objeto(s) de conhecimento mobilizado(s):** Variáveis, atribuição de valores, tipos primitivos (int, float, str e bool), conversão de tipos de dados (type casting) e comandos de entrada e saída (input() e print()).
-4. **Desvio ou erro encontrado + causa técnica:** Durante os estudos, percebi a necessidade de aprofundar a compreensão sobre a conversão de tipos de dados, principalmente ao receber informações do usuário por meio do comando input().
-5. **Decisão de ajuste + fonte:** Decidi aprofundar os estudos utilizando as aulas do Curso em Vídeo, de Gustavo Guanabara, e o ChatGPT como assistente de aprendizagem, para esclarecer dúvidas e compreender melhor os conceitos apresentados.
-6. **Feedback recebido e o que mudei:** Utilizei as explicações e orientações recebidas durante os estudos para reforçar os conceitos que ainda apresentavam dúvidas, principalmente sobre os tipos de dados e a utilização de variáveis.
-7. **Próximo passo:** Continuar aprofundando os conhecimentos em Python e começar a aplicar os conceitos estudados no desenvolvimento do CRUD Anuncify, utilizando variáveis e entradas de dados para estruturar o cadastro de anúncios.
+
+
+
 
 ## 🟢 CICLO 03 — 26/08 — Operadores, fluxogramas e paradigmas
 
