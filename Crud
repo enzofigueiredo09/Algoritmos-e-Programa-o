@@ -1,53 +1,86 @@
-Nome = ""
-Parque = ""
-Tem_ingresso = False
+[nome_do_parque, abertura, fechamento]
+parques_horarios = [
+    ["Magic Kingdom", "09:00", "22:00"],
+    ["EPCOT", "09:00", "21:00"],
+    ["Hollywood Studios", "09:00", "21:00"],
+    ["Animal Kingdom", "08:00", "20:00"]
+]
 
 while True:
-    print("INGRESSOS DISNEY")
+    print("\nINGRESSOS DISNEY")
     print("1. Criar Ingresso (Create)")
-    print("2. Ver Ingresso (Read)")
+    print("2. Ver Ingressos (Read)")
     print("3. Mudar Parque (Update)")
     print("4. Cancelar Ingresso (Delete)")
-    print("5. Sair")
-    
-    opcao = input("Escolha (1-5): ")
+    print("5. Ver Horarios dos Parques (Matriz)")
+    print("6. Sair")
+
+    opcao = input("Escolha (1-6): ")
 
     if opcao == "1":
-        if tem_ingresso == True:
-            print(" Já existe um ingresso cadastrado! Cancele o atual para criar outro.")
-        else:
-            nome = input("Seu nome:")
-            parque = input("Parque (ex: Magic Kingdom): ")
-            tem_ingresso = True
-            print(f" Ingresso de {nome} criado para o {parque}!")
+        nome = input("Seu nome: ")
+        parque = input("Parque (ex: Magic Kingdom): ")
+
+        # Dicionário representando um ingresso
+        ingresso = {
+            "nome": nome,
+            "parque": parque
+        }
+
+        # Adiciona o dicionário dentro da lista
+        ingressos.append(ingresso)
+        print(f"Ingresso de {nome} criado para o {parque}!")
 
     elif opcao == "2":
-        print("SEU INGRESSO")
-        if tem_ingresso == False:
+        print("\nSEUS INGRESSOS")
+        if len(ingressos) == 0:
             print("Nenhum ingresso cadastrado.")
         else:
-            print(f"Nome: {nome} - Parque: {parque}")
+            for i in range(len(ingressos)):
+                item = ingressos[i]
+                print(f"{i + 1}. Nome: {item['nome']} - Parque: {item['parque']}")
 
     elif opcao == "3":
-        if tem_ingresso == False:
+        if len(ingressos) == 0:
             print("Nenhum ingresso para alterar.")
         else:
-            novo_parque = input("Digite o novo parque: ")
-            parque = novo_parque
-            print(" Parque alterado com sucesso!")
+            for i in range(len(ingressos)):
+                print(f"{i + 1}. {ingressos[i]['nome']} ({ingressos[i]['parque']})")
+
+            numero = int(input("Qual numero do ingresso quer alterar? "))
+            if numero >= 1 and numero <= len(ingressos):
+                novo_parque = input("Digite o novo parque: ")
+                ingressos[numero - 1]["parque"] = novo_parque
+                print("Parque alterado com sucesso!")
+            else:
+                print("Numero invalido!")
 
     elif opcao == "4":
-        if tem_ingresso == False:
+        if len(ingressos) == 0:
             print("Nenhum ingresso para apagar.")
         else:
-            nome = ""
-            parque = ""
-            tem_ingresso = False
-            print(" Ingresso deletado com sucesso!")
+            for i in range(len(ingressos)):
+                print(f"{i + 1}. {ingressos[i]['nome']} ({ingressos[i]['parque']})")
+
+            numero = int(input("Qual numero do ingresso quer cancelar? "))
+            if numero >= 1 and numero <= len(ingressos):
+                removido = ingressos.pop(numero - 1)
+                print(f"Ingresso de {removido['nome']} deletado com sucesso!")
+            else:
+                print("Numero invalido!")
 
     elif opcao == "5":
+        print("\nHORARIOS DOS PARQUES")
+        # Percorrendo a matriz (cada linha tem [parque, abre, fecha])
+        for linha in parques_horarios:
+            parque_nome = linha[0]
+            abre = linha[1]
+            fecha = linha[2]
+            print(f"{parque_nome}: abre {abre} - fecha {fecha}")
+
+    elif opcao == "6":
         print("Ate logo!")
         break
 
     else:
-        print("Opcao invalida! Escolha um número de 1 a 5.")
+        print("Opcao invalida! Escolha um numero de 1 a 6.")
