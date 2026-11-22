@@ -54,7 +54,7 @@ Cada registro de **Ingresso** possui os seguintes atributos necessários:
 
 ###  Roadmap de Desenvolvimento (Passo a Passo de Construção)
 
-- [x] **Fase 1: Mapeamento de Ideia e Requisitos** (Definição das regras de negócio).
-- [x] **Fase 2: Estruturação dos Dados** (Definição da lista e variáveis).
+- [V] **Fase 1: Mapeamento de Ideia e Requisitos** (Definição das regras de negócio).
+- [V] **Fase 2: Estruturação dos Dados** (Definição da lista e variáveis).
 - [x] **Fase 3: Construção do Loop e Menu** (Criação da interface de terminal).
-- [x] **Fase 4: Documentação e Publicação** (Criação do README e envio ao GitHub).
+- [V] **Fase 4: Documentação e Publicação** (Criação do README e envio ao GitHub).
