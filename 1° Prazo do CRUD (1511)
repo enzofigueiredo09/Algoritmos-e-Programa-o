@@ -500,7 +500,7 @@ Durante os estudos, também usei o Gemini (IA de uso cotidiano) para tirar dúvi
 
 > _…_
 
-Informações acima não concluída pois falta a devolutiva da AV Qualis
+🟠 Informações acima não concluída pois falta a devolutiva da AV Qualis
 
 ## 🟠 CICLO 05 — 09/09 — Condicionais aninhadas e operadores lógicos
 
@@ -521,7 +521,7 @@ Informações acima não concluída pois falta a devolutiva da AV Qualis
 3. **Objeto(s) de conhecimento mobilizado(s):** Laços `while` e `for`, `break` e `continue`. Usei `while True` no menu pela quantidade indefinida de ações e `for` nas coleções finitas.
 4. **Desvio ou erro encontrado + causa técnica:** Posição inadequada de parada ou controle de fluxo em testes de repetição causou execução ou salto indevido.
 5. **Decisão de ajuste + fonte:** Mantive `break` apenas na saída do menu e percorri as listas sem alterar seu tamanho durante o `for` (Documentação Python).
-6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** Na P1, vi que precisava ter mais atenção a detalhes de enunciado e rastreamento de variáveis; passei a fazer teste de mesa antes de finalizar.
+6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** Não analisei a P1, ainda.
 7. **Próximo passo:** Guardar vários ingressos em uma lista no Ciclo 07.
 
 ## 🟠 CICLO 07 — 07/10 — Listas: armazenamento e iteração
