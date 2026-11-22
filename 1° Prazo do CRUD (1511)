@@ -500,89 +500,52 @@ Durante os estudos, também usei o Gemini (IA de uso cotidiano) para tirar dúvi
 
 > _…_
 
+Informações acima não concluída pois falta a devolutiva da AV Qualis
+
 ## 🟠 CICLO 05 — 09/09 — Condicionais aninhadas e operadores lógicos
 
-<details>
-<summary>📘 Orientações do Ciclo 05</summary>
-
-- **Sem Campo do Protocolo hoje.** Preencha o Registro do Ciclo 05.
-- Registre **qual combinação de condições** (`and`, `or`, `not`) você precisou e **por que** uma condicional aninhada ou um operador lógico foi a melhor escolha.
-- Descreva **pelo menos um caso de teste** que você usou para provar a lógica (entrada → resultado esperado → resultado obtido).
-- **Atenção à P1 (23/09):** reveja o Logbook até aqui. Complete itens em branco e confirme se os commits estão em dia.
-- Na semana de 16/09 (Nivelamento / Peer Instruction), reserve 10 minutos para atualizar este arquivo.
-</details>
-
 #### Registro do Ciclo 05 — 09/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Usar condicionais aninhadas e operadores lógicos para validar estados do ingresso e faixas de escolha.
+2. **O que implementei:** Estruturei `if/elif/else` aninhados para checar `tem_ingresso` e usei `and` para validar o intervalo do número escolhido (`numero >= 1 and numero <= len(ingressos)`).
+3. **Objeto(s) de conhecimento mobilizado(s):** Condicionais encadeadas e aninhadas, operadores relacionais e lógicos (`and`, `or`, `not`).
+4. **Desvio ou erro encontrado + causa técnica:** Condições mal agrupadas podiam levar a ramos errados por falta de separação clara entre a opção do menu e a regra de negócio.
+5. **Decisão de ajuste + fonte:** Separei a escolha do menu no primeiro nível e aninhei as validações dentro de cada opção (Documentação Python — *Control Flow Tools*). Teste: opção `"3"` sem ingresso → `"Nenhum ingresso para alterar."` → resultado igual ao esperado.
+6. **Feedback recebido e o que mudei:** Revisei os registros e commits antes da P1.
+7. **Próximo passo:** Fazer a P1 e estudar laços de repetição no Ciclo 06.
 
 ## 🟠 CICLO 06 — 30/09 — Devolutiva da P1 + repetição: `for`, `while`, `break`, `continue`
 
-<details>
-<summary>📘 Orientações do Ciclo 06</summary>
-
-- **Sem Campo do Protocolo hoje.** Preencha o Registro do Ciclo 06.
-- Use o item 6 para registrar a **devolutiva da P1**: o que errou e **qual conceito** estava faltando. Esses erros alimentam o **Campo 07c** (conceitos corrigidos). *Anote já, para não esquecer.*
-- Registre **por que escolheu `for` ou `while`** em cada laço do seu CRUD (cadastro em lote, listagem, menu).
-- Item 4: se um laço ficou infinito ou pulou itens, descreva a **causa técnica** (condição de parada, incremento, `break` fora de lugar).
-</details>
-
 #### Registro do Ciclo 06 — 30/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Usar `while` e `for` com `break` no CRUD e registrar a devolutiva da P1.
+2. **O que implementei:** Mantive o menu em `while True` com `break` na saída e usei `for` para percorrer ingressos e a matriz de parques.
+3. **Objeto(s) de conhecimento mobilizado(s):** Laços `while` e `for`, `break` e `continue`. Usei `while True` no menu pela quantidade indefinida de ações e `for` nas coleções finitas.
+4. **Desvio ou erro encontrado + causa técnica:** Posição inadequada de parada ou controle de fluxo em testes de repetição causou execução ou salto indevido.
+5. **Decisão de ajuste + fonte:** Mantive `break` apenas na saída do menu e percorri as listas sem alterar seu tamanho durante o `for` (Documentação Python).
+6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** Na P1, vi que precisava ter mais atenção a detalhes de enunciado e rastreamento de variáveis; passei a fazer teste de mesa antes de finalizar.
+7. **Próximo passo:** Guardar vários ingressos em uma lista no Ciclo 07.
 
 ## 🟠 CICLO 07 — 07/10 — Listas: armazenamento e iteração
 
-<details>
-<summary>📘 Orientações do Ciclo 07</summary>
-
-- **Sem Campo do Protocolo hoje.** Preencha o Registro do Ciclo 07.
-- Justifique **por que seus dados cabem em uma lista** e como você os percorre (iteração).
-- Item 4: erros típicos — índice fora do intervalo, alterar a lista enquanto percorre, confundir cópia com referência. Registre qual deles aconteceu e a causa técnica.
-- Item 3: nomeie as **operações de lista** que usou (adicionar, remover, ordenar, fatiar…).
-</details>
-
 #### Registro do Ciclo 07 — 07/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Guardar e percorrer vários ingressos usando uma lista.
+2. **O que implementei:** Criei `ingressos = []` e percorri com `for i in range(len(ingressos))` para listar, alterar e apagar.
+3. **Objeto(s) de conhecimento mobilizado(s):** Listas, iteração com `for`/`range(len())`, `.append()`, acesso por índice e `.pop()`. Os ingressos cabem em lista por serem vários registros do mesmo tipo.
+4. **Desvio ou erro encontrado + causa técnica:** Risco de `IndexError` ao acessar `ingressos[numero - 1]` com número fora do intervalo válido.
+5. **Decisão de ajuste + fonte:** Validei `numero >= 1 and numero <= len(ingressos)` e se a lista está vazia antes de alterar ou remover (Documentação Python).
+6. **Feedback recebido e o que mudei:** Garanti a checagem de lista vazia antes de pedir o número do ingresso.
+7. **Próximo passo:** Transformar cada ingresso em dicionário e adicionar matriz no Ciclo 08.
 
 ## 🟠 CICLO 08 — 14/10 — Busca/consulta e introdução a dicionários e matrizes
 
-<details>
-<summary>📘 Orientações do Ciclo 08</summary>
-
-- **Sem Campo do Protocolo hoje.** Preencha o Registro do Ciclo 08.
-- Explique **por que cada item do seu catálogo virou um dicionário** (chave → valor) em vez de uma lista de valores soltos.
-- Item 4: registre **qual busca falhou** (item inexistente, tipo diferente — `"2"` ≠ `2`, chave com maiúscula errada) e a causa técnica.
-- Se usou o lote de dados defeituoso, registre **qual registro** quebrou a busca.
-- Item 5: cite a fonte (*Pense em Python*, cap. 11, ou outra).
-</details>
-
 #### Registro do Ciclo 08 — 14/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Representar cada ingresso como dicionário e consultar horários de parques em matriz.
+2. **O que implementei:** Cada ingresso virou `{"nome": nome, "parque": parque}` na lista `ingressos`, e adicionei a matriz `parques_horarios` para ver horários.
+3. **Objeto(s) de conhecimento mobilizado(s):** Dicionários (chave → valor), matrizes e consulta. O dicionário deixa claro o que cada dado significa (`"nome"` e `"parque"`), diferente de valores soltos.
+4. **Desvio ou erro encontrado + causa técnica:** Falhas de busca/seleção ocorrem por índice inválido (`IndexError`), tipo diferente (`str` vs `int`) ou nome de chave errado (`KeyError`).
+5. **Decisão de ajuste + fonte:** Padronizei chaves em minúsculo, validei índices e li as colunas da matriz explicitamente (*Pense em Python*, cap. 11).
+6. **Feedback recebido e o que mudei:** Mantive a implementação simples e legível para facilitar os testes.
+7. **Próximo passo:** Finalizar os commits do Grupo 2 até 21/11 às 23h59.
 
----
 
 # 🔵 GRUPO 3 — prazo quinta 26/11 às 23h59
 
