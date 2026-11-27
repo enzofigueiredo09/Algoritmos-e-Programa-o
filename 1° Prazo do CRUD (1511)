@@ -192,7 +192,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
 | 1 | Campo 02 — Aprofundamento | 16/11 | ✅ | ✅ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ✅ | ✅ |
-| 2 | Checkpoint Conceitual | 21/11 | ✅ | ✅ |
+| 2 | Checkpoint Conceitual | 21/11 |  |  |
 | 2 | Campo 03 — Execução e desvios | 21/11 | ✅ | ✅ |
 | 2 | Campo 04 — Interação com IA | 21/11 | ✅ | ✅ |
 | 3 | Registros dos Ciclos 09, 10, 11 e 12 | 26/11 | ✅ | ✅ |
@@ -664,20 +664,18 @@ Durante os estudos, também usei o Gemini (IA de uso cotidiano) para tirar dúvi
 
 | | |
 |---|---|
-| **Enzo Figueiredo Alhadef Silva Ramos** | _…_ |
-| **Engenharia de Software / Time / Função** | _…_ |
+| **Enzo Figueiredo Alhadef Silva Ramos** | CRUD individual — *My Disney Experience* (UNDB · 2026.2) |
+| **Engenharia de Software / Time / Função** | Engenharia de Software · Autor Enzo Figueiredo / Revisor Joas Franco Rodrigues (Logbook individual) |
 
-<details>
-<summary>🔒 Uso do professor — rubrica completa</summary>
+### Resumo de preparação por critério (direto ao ponto)
 
-| CRITÉRIO | EXCELENTE (4,0) | SATISFATÓRIO (3,0) | INSATISFATÓRIO (2,0) | AUSENTE (0) |
-|---|---|---|---|---|
-| **1. DOMÍNIO DOS OBJETOS DE CONHECIMENTO** — Responde com precisão técnica, sem apoio dos colegas, demonstrando aprendizagem do conteúdo. | Responde com precisão e profundidade, nomeando os objetos de conhecimento mobilizados sem hesitação. | Responde com precisão, com imprecisões pontuais que não comprometem o raciocínio. | Responde de forma vaga, com erros conceituais relevantes ou dependendo dos colegas. | Não responde ou demonstra desconhecimento total. |
-| **2. APLICAÇÃO DO CONTEÚDO À SOLUÇÃO** — Demonstra como os objetos de conhecimento fundamentaram as decisões do processo. | Explicita com precisão qual objeto de conhecimento fundamentou cada decisão relevante do processo investigativo, citando referência e demonstrando por que aquele conhecimento era o mais adequado. | Estabelece a relação conteúdo-decisão na maioria das perguntas, com alguma imprecisão pontual. | Não consegue explicitar a relação entre o conteúdo e as decisões do processo investigativo com clareza. | Não demonstra nenhuma relação entre os objetos de conhecimento e as decisões tomadas. |
-| **3. EVOLUÇÃO CONCEITUAL** — Demonstra aprendizagem em relação ao que sabia no início do ciclo. | Identifica com precisão o que aprendeu, o que corrigiu e como o conhecimento evoluiu ao longo do ciclo. | Demonstra evolução em parte dos conceitos trabalhados, com alguma dificuldade de articular a trajetória. | Dificuldade em identificar diferenças entre o que sabia no início e o que domina agora. | Não demonstra nenhuma percepção de evolução conceitual ao longo do ciclo. |
-| **4. CAPACIDADE DE TRANSFERÊNCIA** — Aplica o conhecimento a um contexto diferente do problema trabalhado. | Consegue transferir o aprendizado para um contexto novo com fundamentação técnica precisa. | Realiza a transferência com imprecisões que não comprometem a lógica do raciocínio. | Demonstra dificuldade em aplicar o conhecimento a contextos diferentes do problema original. | Não consegue realizar nenhuma transferência do conhecimento para contexto diferente. |
-| **5. ARGUMENTAÇÃO SOB PRESSÃO** — Mantém coerência técnica diante de questionamentos imprevistos. | Mantém raciocínio coerente, reconhece limites com honestidade e reformula com fundamentação. | Mantém coerência na maior parte, com hesitações pontuais sem perda do fio técnico. | Fragilidade técnica diante de questionamentos imprevistos. | Não sustenta argumentação técnica diante de nenhum questionamento. |
-| **6. AUTONOMIA INTELECTUAL E COERÊNCIA COM O LOGBOOK** — Defende o que registrou com consciência e sem depender do grupo. | Defende com precisão as decisões do Logbook, demonstrando autoria plena e independência intelectual. | Defende a maioria das decisões com coerência, com alguma imprecisão ou apoio pontual. | Depende dos colegas ou demonstra desconhecimento de parte do que registrou no próprio Logbook. | Não reconhece o que registrou ou não demonstra autonomia intelectual durante a arguição. |
+- **1. Domínio dos objetos:** Dominar variáveis, tipos primitivos (`str`, `bool`), condicionais, laços (`while`, `for`), listas, dicionários, matrizes e funções (`def`).
+- **2. Aplicação à solução:** Justificar cada escolha pelo problema real do CRUD — flag de estado no início, lista de dicionários para vários ingressos, matriz para horários dos parques e funções para modularizar.
+- **3. Evolução conceitual:** Mostrar a passagem de variáveis simples e um único ingresso para estruturas compostas, com correções reais (limpeza de dados e retorno `str` do `input()`).
+- **4. Transferência:** Aplicar validação de estado, dados estruturados (chave/valor) e modularização a sistemas de cadastro, web/mobile ou gestão.
+- **5. Argumentação sob pressão:** Responder com clareza sobre limites da memória RAM, ausência de persistência em disco/banco e falta de `try/except` em entradas numéricas.
+- **6. Autonomia e coerência:** Sustentar de forma própria tudo o que foi registrado nos Ciclos 01 a 12 e nos Campos 01 a 07 sem depender de terceiros.
+
 
 **PONTUAÇÃO:** _____ / 24,0 **CONCEITO:** _____________
 
