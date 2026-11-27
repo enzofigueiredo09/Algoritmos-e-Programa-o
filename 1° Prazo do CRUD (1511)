@@ -571,7 +571,7 @@ Durante os estudos, também usei o Gemini (IA de uso cotidiano) para tirar dúvi
 | | |
 |---|---|
 | **Enzo Figueiredo Alhadef Silva Ramos** | Joas Franco Rodrigues |
-| **Repositório revisado** | https://github.com/joasfranco/Algoritmos-e-programacao  |
+| **https://github.com/enzofigueiredo09/Algoritmos-e-Programa-o** | https://github.com/joasfranco/Algoritmos-e-programacao  |
 | **Joas Franco Rodrigues** | Enzo Figueiredo Alhadef Silva Ramos |
 
 **5a. Etapas:** rodei o código do colega (concluída), testei CRUD e entradas inválidas (concluída), li o código e o Logbook (concluída), registrei achados (concluída) e enviei feedback respeitoso (concluída).
@@ -627,39 +627,6 @@ Durante os estudos, também usei o Gemini (IA de uso cotidiano) para tirar dúvi
 6. **Feedback e mudança:** Na revisão por pares, foquei em testar falhas antes de aprovar.
 7. **Próximo passo:** Fechar os Campos 05, 06 e 07 no GitHub.
 
-### 🧩 CAMPO 05 — Revisão por pares nº 2 (Ciclo 12 · 11/11)
-
-| | |
-|---|---|
-| **Autor do CRUD revisado** | Colega de turma |
-| **Repositório revisado** | Link do repositório do colega |
-| **Revisor** | Enzo Figueiredo Alhadef Silva Ramos |
-
-**5a. Etapas:** rodei com entradas válidas e inválidas (concluída), testei casos de borda e lote defeituoso (concluída), avaliei clareza e funções (concluída), preenchi os blocos (concluída) e enviei feedback (concluída).
-
-**5b. Insumos:** 5 testes de borda/lote defeituoso (planejado: 5, usado: 5, variação: 0); 1 código-fonte (planejado: 1, usado: 1, variação: 0).
-
-**5c. Qualidade:** Critério: resistir a entradas inválidas, vazias ou fora do limite sem travar. Atende? **[x] Parcialmente**.
-
-**5d. Riscos:** Dados ruins ou números inválidos travarem o programa → testei cenários extremos e sugeri checagens antes do acesso.
-
-**5e. Decisões rastreáveis:**
-- **11/11/26 | Revisor:** Validar limites e lista vazia antes de alterar/excluir → *Condicionais, operadores e listas* → Documentação Python 3.
-- **11/11/26 | Revisor:** Separar menu, CRUD e consulta em funções → *Funções e modularização* → *Pense em Python*.
-
-### 🧩 CAMPO 07 — Evolução conceitual
-
-- **7a. Início (Campo 01):** Achava que variáveis básicas e `input()`/`print()` dariam conta do recado, mas já via risco de faltar controle de estado e cuidado com tipos.
-- **7b. O que aprendi:**
-  - *Controle de estado:* não sabia manter estado sem lista → uso flag (`tem_ingresso`) e limpo com `""` ou `.pop()` (Campos 01–02 e Ciclo 07).
-  - *Listas, dicionários e matrizes:* não sabia estruturar vários registros e tabelas → uso lista de dicionários (`ingressos`) e matriz (`parques_horarios`) (Campos 03–04 e Ciclo 08).
-  - *Funções:* não sabia dividir o código sem bagunçar o fluxo → separei em funções com parâmetros claros e `main()` (Ciclo 10 e Campo 05).
-- **7c. Equívocos corrigidos:**
-  1. Achar que desligar estado já limpava a variável → corrigido ao zerar o valor ou remover o item (testes práticos).
-  2. Tratar `input()` como número sem lembrar que vem como texto (`str`) → corrigido comparando como string ou convertendo e validando (estudos e P1).
-- **7d. Transferência:** Em sistemas web ou de gestão (como cadastros de alunos ou produtos), validar estado, estruturar dados com chave e valor e dividir em funções evita falhas e facilita crescer o projeto.
-- **7e. Ainda a aprofundar:** Tratamento de exceções com `try/except`, validações de entrada mais completas e salvar dados em arquivo ou banco de dados.
-
 
 
 # 🏁 DEFESA TÉCNICA — quarta 18/11
@@ -668,12 +635,12 @@ Durante os estudos, também usei o Gemini (IA de uso cotidiano) para tirar dúvi
 <summary>📘 Orientações para a Defesa Técnica e preparação</summary>
 
 **A Defesa é antes dos prazos dos Grupos 2 e 3.** Você será arguido sobre o que já estiver registrado e commitado. Priorize, até **terça 17/11**:
-- [ ] **Grupo 1 entregue** (prazo 16/11): Identificação, Registros 01 a 04, Campos 01 e 02.
-- [ ] **Campo 04 (IA)** e **Campo 03** ao menos em rascunho, para sustentar as perguntas sobre decisões (critérios 2 e 5).
-- [ ] **Campo 06c** (pergunta da banca e resposta) e **rascunho de 7a e 7b**, para sustentar a evolução conceitual (critério 3).
-- [ ] Registros dos Ciclos já feitos, mesmo que ainda não "entregues" no prazo do grupo.
-- [ ] `README.md`, `docs/` e CRUD rodando.
-- [ ] Você consegue explicar **cada linha** do seu código e **cada decisão** registrada.
+- [V] **Grupo 1 entregue** (prazo 16/11): Identificação, Registros 01 a 04, Campos 01 e 02.
+- [V] **Campo 04 (IA)** e **Campo 03** ao menos em rascunho, para sustentar as perguntas sobre decisões (critérios 2 e 5).
+- [V] **Campo 06c** (pergunta da banca e resposta) e **rascunho de 7a e 7b**, para sustentar a evolução conceitual (critério 3).
+- [V] Registros dos Ciclos já feitos, mesmo que ainda não "entregues" no prazo do grupo.
+- [V] `README.md`, `docs/` e CRUD rodando.
+- [V] Você consegue explicar **cada linha** do seu código e **cada decisão** registrada.
 - Os demais itens seguem com os prazos dos grupos (21/11 e 26/11). A banca pode consultar o histórico do Git.
 
 **A Defesa Técnica é individual.** Você será arguido sobre o que registrou. Cada aluno recebe pelo menos **1 questão** nos níveis de **Avaliação** ou **Criação** (taxonomia de Bloom).
@@ -697,8 +664,8 @@ Durante os estudos, também usei o Gemini (IA de uso cotidiano) para tirar dúvi
 
 | | |
 |---|---|
-| **Nome** | _…_ |
-| **Curso / Time / Função** | _…_ |
+| **Enzo Figueiredo Alhadef Silva Ramos** | _…_ |
+| **Engenharia de Software / Time / Função** | _…_ |
 
 <details>
 <summary>🔒 Uso do professor — rubrica completa</summary>
@@ -720,7 +687,7 @@ Durante os estudos, também usei o Gemini (IA de uso cotidiano) para tirar dúvi
 
 **OBSERVAÇÕES:** _…_
 
-**Professor(a):** _________________  **Data:** ___________
+**Professor(a):** Rondineli Seba Salomão  **Data:** 18112026
 </details>
 
 ### Registro do Encerramento — 18/11
